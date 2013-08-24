@@ -5,15 +5,19 @@
                                        
   
 
- 1 @fileoverview ERP下单购物车.
+
+/**
+ * @fileoverview ERP下单购物车。
+
+ * @module erp/dianxiao。
  
- 2 @module erp/dianxiao。
+ * @constructor Electrical。
  
- 3 @constructor Electrical。
+ * @param config{object}。
  
- 4 @param config{object}。
+ * @return {object}
  
- 5 @return {object}
+ **/
  
 
 KISSY.add('erp/dianxiao',function(S) {
