@@ -5,17 +5,24 @@
                                        
   
 
- 1 @fileoverview ERP下单购物车
- 2 @module erp/dianxiao
- 3 @constructor Electrical
- 4 @param config{object}
+ 1 @fileoverview ERP下单购物车.
+ 
+ 2 @module erp/dianxiao。
+ 
+ 3 @constructor Electrical。
+ 
+ 4 @param config{object}。
+ 
  5 @return {object}
  
 
 KISSY.add('erp/dianxiao',function(S) {
+
 	var D = S.DOM,
 		E = S.Event;
+		
 	var isDaily = location.host.indexOf('hitao.com') > -1 ? 'hitao.com' : 'daily.hitao.net';
+	
 	var API = {
 		search:'http://erp.'+isDaily+'/home/acrossPermission.htm?action=/orderform/AddTelOrderAction&event_submit_do_query_product=anything',
 		orderDefault:'http://erp.'+isDaily+'/home/acrossPermission.htm?action=/orderform/AddOrderAction&event_submit_do_get_consignee_address=anything&_input_charset=UTF-8',
@@ -24,6 +31,7 @@ KISSY.add('erp/dianxiao',function(S) {
 		order: 'http://erp.'+isDaily+'/home/acrossPermission.htm?action=/orderform/AddTelOrderAction&event_submit_do_add_order=something'
 		
 	};
+	
 	function Electrical(config) {
 		var self = this;
 		
